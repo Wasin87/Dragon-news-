@@ -1,6 +1,7 @@
 import React from 'react';
 import { CiBookmark } from "react-icons/ci";
 import { IoShareSocial } from "react-icons/io5";
+import { Link } from 'react-router';
 
 const NewsCard = ({ news }) => {
     return (
@@ -53,9 +54,9 @@ const NewsCard = ({ news }) => {
                     <span className="font-semibold">Tags:</span> {news.tags?.join(', ')}
                 </p>
 
-                <button className="link mt-1 font-medium text-amber-500">
+                <Link to={`/news-details/${news.id}`} className="link mt-1 font-medium text-black hover:text-amber-500">
                     Read More
-                </button>
+                </Link>
 
                 {/* Footer */}
                 <div className="flex justify-between items-center pt-4 border-t mt-3">
