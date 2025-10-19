@@ -30,7 +30,7 @@ const CategoryNews = () => {
 
             <div className='grid grid-cols-1 gap-5'>
                 {
-                    categoryNews.map(news => <NewsCard key={news.id} news={news} fallback={<span className="loading loading-dots loading-xl"></span>}></NewsCard>)
+                    categoryNews.map(news => <NewsCard key={news.id} news={news}></NewsCard>)
                 }
 
             </div>
